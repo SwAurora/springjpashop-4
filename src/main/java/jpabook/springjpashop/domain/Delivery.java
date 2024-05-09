@@ -14,7 +14,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "delivery")
+    @OneToOne(mappedBy = "delivery")
     @JoinColumn(name = "order_id")
     private Order order;
 
